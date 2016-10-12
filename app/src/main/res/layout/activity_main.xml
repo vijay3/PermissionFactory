@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#616161"
+    tools:context="com.vijayhiremath.permissions.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_holder"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#616161"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_circle"
+                />
+
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_circle"
+                />
+
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_circle"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_permission_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:text="... because you can send pictures to your friends :)"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
