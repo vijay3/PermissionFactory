@@ -6,15 +6,26 @@ Code stub :
 /********************************************************/
 
 PermissionFactory factory = new PermissionFactory( this );
+
 CameraPermission cameraPermission = ( CameraPermission ) factory.getPermission( PermissionFactory.CameraPermission );
 
 if( !cameraPermission.isAllowed() )
+
 {
-  cameraPermission.requestPermission( this );
+
+      cameraPermission.requestPermission( this );
+
 }
+
 else
+
+
 {
-  Log.e( TAG , "camera permission is given." ) ;
+
+
+      Log.e( TAG , "camera permission is given." ) ;
+      
 }
+
 
 /********************************************************/
